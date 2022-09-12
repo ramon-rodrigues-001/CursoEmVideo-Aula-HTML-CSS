@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textando img</title>
+</head>
+<body>
+    <h1>Redimensonando imagens Png</h1>
+    <p>Nesse exercicio eu vou fazer uma img encaixa exatamente com o <br>tamanho da tela. como um celular, tablet, pc, etc</p>
+    <p>Para isso eu vou utilizar uma teg chamada <strong>(picture)</strong> dentro dpois de colocar a maior imagen deve ussar a teg <strong>(source media type)</strong></p>
+    <Strong>Lembrese A teg source sempre por cima da img maior. <br>Tambem lembre dos detalhes como colocar (px) depois de colocar o tamanho da img</Strong>
+    <code>
+    <pre>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="img/pegueno.jpg" type="image/jpg"&gt;
+
+        &lt;source media="(max-width: 1050px)" srcset="img/medio.jpg" type="image/jpg"&gt;
+        
+        &lt;img src="img/imagens-surreais.jpg" alt="imagens flexivel"&gt;
+    &lt;/picture&gt;
+    </pre>
+    </code>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/pegueno.jpg" type="image/jpg">
+
+        <source media="(max-width: 1050px)" srcset="img/medio.jpg" type="image/jpg">
+
+        <img src="img/imagens-surreais.jpg" alt="imagen flexivel">
+    </picture>
+    <h2>Tambem podemos colocar audio</h2>
+    <p><strong>Para isso devemos usar a teg &lt;audio&gt; utilize (controls) dentro do audio para criar um botão de audio</strong></p>
+
+    <p><strong>EX 1:</strong> &lt;audio src="midia/guanacast-33.mp3 " controls&gt;&lt;/audio&gt;</p>
+
+    <p><strong>EX 2:</strong> &lt;audio controls&gt; <br>
+            &lt;source src="midia/happy-mistake.mp3" type="audio/mpeg"&gt; <br>
+        &lt;/audio&gt;</p>
+    
+    <audio src=""></audio>
+    
+</body>
+</html>

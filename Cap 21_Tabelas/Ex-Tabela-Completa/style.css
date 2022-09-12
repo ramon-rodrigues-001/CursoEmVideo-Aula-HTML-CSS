@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-size: 1.1em;
+    border: solid 5px black;
+    border-collapse: collapse;
+    margin: 50px auto;
+    width: 600px;
+    height: 200px;
+}
+table caption {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+}
+th, td {
+    border: solid 1px black;
+    padding: 6px;
+}

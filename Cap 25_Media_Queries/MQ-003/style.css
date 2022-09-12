@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Estilo Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+@media screen and (orientation: portrait){
+    /* Estilo aparelho em pé (portrait) */
+
+    body {
+        background-image: url(imagens/cev-portrait.jpg);
+        background-position: center top;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /* Estilo aparelho deitado (landscape) */
+
+    body {
+        background-image: url(imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+}

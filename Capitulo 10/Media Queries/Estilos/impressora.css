@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+menu {
+    display: none;
+    font-size: 1.3em;
+}
+
+main article {
+    box-shadow: none;
+    width: 100vw;
+    text-align: left;
+}
+
+main article::after {
+    margin: 10px;
+    content: "Impresso em WWW NoiséFoda .com";
+}

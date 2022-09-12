@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ancora para Icone -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/mobile-first.css" media="all">
+    <link rel="stylesheet" href="CSS/outras-telas.css">
+    
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <section id="imagem">
+            <img src="img/pexels-pixabay-60504.jpg" alt="">
+        </section>
+
+
+        <section id="formulario">
+            <form action="#">
+                <h1>LOGIN</h1>
+                <p>Seja bem-vindo(a) novamente, Faça login para assesar sua conta.</p>
+
+
+            <!-- input senha -->
+                <div class="div-inputs">
+                    <label for="email">
+                        <span class="material-symbols-outlined">
+                            Mail
+                        </span>
+                    </label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+            <!-- input email -->
+                <div class="div-inputs">
+                    <span class="material-symbols-outlined" id="senha_oculta">
+                        Visibility_off
+                    </span>
+                    <input type="password" id="senha" placeholder="Senha" minlength="8" required>
+                </div>
+
+            <!-- Submit -->
+                <input type="submit" value="Entrar"> <br>
+                <a href="#" id="esqueceu">Esqueceu a Senha</a>
+            </form>
+
+
+            <div id="container-do-circulo">
+                <div id="circulo">
+                    <p>OR</p>
+                </div>
+            </div>
+
+
+            <div id="imagens">
+                <a href="#"><img src="img/icone-fecebook2.png" alt=""></a>
+                <a href="#"><img src="img/icone-google-png.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

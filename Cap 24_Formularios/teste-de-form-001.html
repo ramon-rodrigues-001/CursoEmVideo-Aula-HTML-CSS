@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Form</title>
+    <style>
+        main {
+            font-size: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px auto;
+            padding: 10px;
+            border: solid 2px red;
+            width: 500px;
+        }
+        main fieldset {
+            margin: 10px;
+        }
+        legend {
+            font-size: 1.3em;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="lixo_javascript_teste_poluido/script.js" autocomplete="on">
+            <fieldset>
+                <legend>input: gmail / password / tel</legend>
+
+                <label for="idemail">Email: </label>
+                <input type="email" name="email" id="idemail" placeholder="Email" autocomplete="email" required>
+                <br> <br>
+                <label for="idsenha">Senha: </label>
+                <input type="password" name="senha" id="idsenha" placeholder="Senha" 
+                minlength="8" required>
+                <br> <br>
+                <label for="idtel">Telefone</label>
+                <input type="tel" name="tel" id="idtel" placeholder="(xx) xxxxx-xxxx" style="text-align: center;" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" autocomplete="tel" required>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>input: Radio</legend>
+
+                <input type="radio" name="sexo" id="mas" value="Masculino" checked>
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="sexo" id="fem" value="Feminino">
+                <label for="fem">Feminino</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>input: date</legend>
+
+                <label for="iddata">Data de Nacimento: </label>
+                <input type="date" name="data" id="iddata">
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>input: checkbox</legend>
+
+                <input type="checkbox" name="fut" id="idfut" checked>
+                <label for="idfut">Futebol</label> <br>
+
+                <input type="checkbox" name="bas" id="idbas">
+                <label for="idas">Basquete</label> <br>
+
+                <input type="checkbox" name="ten" id="idten">
+                <label for="idten">Tenes</label> <br>
+
+                <input type="checkbox" name="nat" id="idnat">
+                <label for="idnat">Natação</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>input: color / range</legend>
+
+                <label for="idcor">Cor Favorira: </label>
+                <input type="color" name="cor" id="idcor"> <br> <br>
+
+                <label for="idnivel">Nivel: </label>
+                <input type="range" name="nivel" id="idnivel">
+            </fieldset>
+
+            <input type="submit" value="Confirmar">
+        </form>
+    </main>
+</body>
+</html>

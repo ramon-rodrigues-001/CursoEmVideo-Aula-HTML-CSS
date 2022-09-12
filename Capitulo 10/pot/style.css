@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9A264D;
+}
+
+body {
+    background-color: #F0F2F5;
+}
+
+main {
+    max-width: 850px;
+    margin: 10px auto;
+    padding: 20px;
+}
+main section#imagem {
+    background-image: url(midia/62039214_1162707667235363_5479298145550598144_n.jpg);
+    background-position: center top;
+    position: relative;
+    min-height: 350px;
+}
+main section#imagem #card-01 {
+    background-color: blue;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    max-width: 200px;
+    max-height: 200px;
+}

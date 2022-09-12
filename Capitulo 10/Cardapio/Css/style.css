@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    color: white;
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    margin: 5px;
+    width: 60%;
+}
+
+img {
+    width: 32px;
+}
+
+ul {
+    width: 30%;
+    text-align: right;
+    margin: 5px;
+}
+ul li {
+    display: inline-block;
+    margin: 2px 5px;
+}
+
+main {
+    width: 100px;
+}

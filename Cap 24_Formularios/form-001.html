@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de segurança</title>
+    <style>
+        main {
+            background-color: aqua;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+        }
+        input {
+            margin: 5px;
+        }
+        input[type="submit"] {
+            padding: 3px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lembrando Esse metodo não e seguro para dados confidenciais;
+    Voçe pode deixar um "POUCO" mais seguro utilizando um metodo [method="post"] dentro de [<frorm>]-->
+
+    <main>
+        <form action="lixo_javascript_teste_poluido/script.js" autocomplete="off">
+
+            <label for="igmail">Gmail: </label>
+            <input type="email" name="gmail" id="igmail"> <br>
+
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha"> <br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

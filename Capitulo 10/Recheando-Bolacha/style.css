@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    min-height: 100px;
+}
+
+main div {
+    display: inline-block;
+}
+main div#div-esquerda {
+    background-color: blue;
+    margin: 20px 10px;
+    padding: 10px;
+    width: 62%;
+}
+main div#div-direita {
+    position: fixed;
+    background-color: red;
+    margin: 20px 10px;
+    padding: 10px;
+    width: 30%;
+    height: 75vh;
+}
+
+main section#block {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    height: 200px;
+}
+main section#flex {
+    display: flex;
+}
+main section#flex article {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    height: 200px;
+}

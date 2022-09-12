@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Estilo Geral [All] First*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    background-image: url(../imagens/back-phone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.583);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.221);
+    margin: 20px auto 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80vw;
+}
+
+
+footer {
+    text-align: center;
+}
+
+img#phone {display: inline-block;}
+img#tablet {display: none;}
+img#pc {display: none;}
+img#tv {display: none;}
+img#impressora {display: none;}

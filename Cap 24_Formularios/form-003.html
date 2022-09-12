@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Checkbox / Radio</title>
+    <style>
+        main {
+            width: 500px;
+            margin: 50px auto;
+        }
+        main legend {
+            font-size: 1.1em;
+        }
+        main label, p {
+            font-weight: bold;
+        }
+        main input[type="submit"] {
+            font: bold 1.1em Arial; 
+            display: block;
+            margin: 15px auto;
+            padding: 10px 60px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="lixo_javascript_teste_poluido/script.js">
+            <fieldset>
+                <legend>Formulario Radio</legend>
+
+                <input type="radio" name="sexo" id="masculino" value="M" checked>
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+                <p>
+                    para utilizar um radio de forma que apenas um pode ser marcado
+                    basta colocar o mesmo [name] em todos eles. <br> <br>
+                    Tambem pode usar um metodo [value="M/F"] para melhor manuseio 
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Formulario Checkbox</legend>
+            
+                <input type="checkbox" name="fut" id="ifut" checked>
+                <label for="">Futebool</label> <br>
+
+                <input type="checkbox" name="bas" id="ibas">
+                <label for="ibas">Basquete</label> <br>
+
+                <input type="checkbox" name="tenes" id="itenes">
+                <label for="itenes">Tenes</label> <br>
+
+                <input type="checkbox" name="nat" id="inat">
+                <label for="inat">Natação</label> <br>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

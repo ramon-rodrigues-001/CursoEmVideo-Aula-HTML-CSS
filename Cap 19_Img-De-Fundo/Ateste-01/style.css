@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(../imagens-cap19/wallpaper002.jpg);
+    background-position: center center;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    min-height: 90px;
+}
+header h1 {
+    padding: 10px;
+}
+header p {
+    font-size: 1.1em;
+    margin: auto;
+    padding: 10px;
+    max-width: 560px;
+}
+
+nav {
+    background-color: #0b0a0a;
+    min-height: 25px;
+}
+nav a {
+    color: white;
+    font: 650 1em normal serif;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav a:hover {
+    color: rgb(198, 189, 171);
+}
+
+
+main {
+    margin: auto;
+    max-width: 720px;
+    min-height: 500px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        .divs {
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(225, 154, 63);
+        }
+        .divs:hover {
+            background-color: aqua;
+        }
+        
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a::before {
+            content: '@ ';
+        }
+        a::after {
+            content: ' [link]';
+            color: rgb(141, 139, 135);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-class</h1>
+    <div id="container">
+        <div class="divs">A</div>
+        <div class="divs">B</div>
+        <div class="divs">C</div>
+    </div>
+    
+    <div style="margin: 20px;">
+        <strong><a href="https://www.youtube.com/c/EnygmaRaps" target="_blank">Enygma</a></strong> <br>
+        <strong><a href="https://www.youtube.com/c/7minutoz" target="_blank">7 MZ</a></strong> <br>
+        <strong><a href="https://www.youtube.com/channel/UC_4PRrKey0iv18cqHuj9CLA" target="_blank">Mh Reps</a></strong> <br>
+    </div>
+</body>
+</html>

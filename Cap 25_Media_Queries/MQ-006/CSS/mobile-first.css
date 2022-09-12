@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #B370F3;
+    position: relative;
+}
+
+
+main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin: 20px 0px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.22);
+    width: 90vw;
+    max-width: 300px;
+    transition: .2s;
+}
+
+            /* ESTILO DO IMAGEM */
+
+#imagem img{
+    width: 100%;
+    height: 190px;
+}
+
+
+            /* ESTILO FO FORMULARIO */
+#formulario {
+    text-align: center;
+    padding: 3px;
+}
+
+#formulario h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#formulario p {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0px 10px 0px;
+    padding: 8px;
+}
+
+div.div-inputs {
+    position: relative;
+    background-color: #a55beb;
+    margin: 3px auto;
+    padding: 1px;
+    border-radius: 6px;
+    width: 95%;
+    height: 38px;
+}
+
+span.material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    background-color: rgb(179, 243, 223);
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: solid 1px black;
+    padding: 3.5px;
+    width: 85%;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-size: 1.3em;
+    border: solid 1px black;
+    padding: 4px;
+    border-radius: 3px;
+    width: 80%;
+    margin-top: 10px;
+    transition: .3s;
+}
+input[type="submit"]:hover {
+    background-color: rgb(4, 4, 180);
+    transition: .3s;
+}
+
+a#esqueceu {
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+a#esqueceu:hover {
+    text-decoration: underline;
+}
+
+
+
+            /* ESTILO DO CIRCULO NO CENTRO */
+div#container-do-circulo {
+    position: relative;
+    background-color: black;
+    margin: 20px 0px 10px 0px;
+    width: 100%;
+    height: 1px;
+}
+
+div#circulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+            /* ESTILO DAS REDES SOCIAIS */
+
+div#imagens img {
+    width: 45px;
+    margin: 0px 15px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.131);
+}
+
+div#imagens a {
+    display: inline-block;
+}
+
+div#imagens a:hover img{
+    transform: translateY(-10px);
+    transition: .4s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.207);
+}

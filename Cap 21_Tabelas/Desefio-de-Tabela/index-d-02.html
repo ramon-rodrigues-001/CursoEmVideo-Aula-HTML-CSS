@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        table {
+            font-size: 1.1em;
+            border: solid 3px black;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 50px auto;
+            width: 500px;
+        }
+        table caption {
+            background-color: black;
+            color: white;
+            font-size: 1.2em;
+        }
+        th, td {
+            border: solid 1px black;
+            padding: 4px;
+        }
+
+        thead, .footer {
+            background-color: rgb(91, 89, 89);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Media Escolar</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Diciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <th scope="col">Fisica</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th scope="col">Matematica</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th scope="col">Quimica</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th scope="col">Biologia</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+                    <!-- ================================================= -->
+            <tr class="footer">
+                <th scope="row" colspan="4">Media de Exatas</th>
+                <td>999</td>
+            </tr>
+                    <!-- ================================================= -->
+            <tr>
+                <th scope="colgroup" rowspan="2">Humanas</th>
+                <th scope="col">Historia</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th scope="col">Geografia</th>
+                <td>00</td>
+                <td>00</td>
+                <td>999</td>
+            </tr>
+                    <!-- ================================================= -->
+            <tr class="footer">
+                <th scope="row" colspan="4">Media de Humanas</th>
+                <td>999</td>
+            </tr>
+                    <!-- ================================================= -->
+        </tbody>
+    </table>
+</body>
+</html>

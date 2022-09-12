@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form mais detalhes</title>
+    <style>
+        main {
+            background-color: aqua;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border: solid 1px black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.243);
+            width: 500px;
+        }
+        input {
+            margin: 5px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            padding: 3px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Alguns metodos para proficionalizar seu fromulario;
+
+    [placeholder="@gmail"]: Deixa a caixa pré prenchido.
+
+    [required]: faz a caixa ser obrigatoria.
+
+    [minlength="20" maxlength="30"]: minimo e maximo permitido. 
+
+    [autocomplete="email"]: utilize autocomplete em <form> & <input>,s.
+
+    [pattern="^\(\d{2}\) \d{4,5}-\d{4}$"]: Formatação do input. -->
+
+    <main>
+        <fieldset>
+            <legend>
+                <h1>Mais detalhes; E novos input,s</h1>
+            </legend>
+            <form action="lixo_javascript_teste_poluido/script.js" method="post">
+
+                <label for="igmail">Gmail: </label>
+                <input type="email" name="igmail" id="gmail" placeholder="@gmail" minlength="15" maxlength="30" required autocomplete="email"> <br>
+
+                <label for="isenha">Senha: </label>
+                <input type="password" name="isenha" id="senha" placeholder="Senha" minlength="8" maxlength="15" required> <br>
+
+                <label for="idata">Tata de Nacimento: </label>
+                <input type="date" name="idata" id="data" value="2022-05-10" required> <br>
+
+                <label for="numero">Numero: </label>
+                <input type="tel" name="inumero" id="numero" placeholder="(xx) xxxxx-xxxx" required pattern="^\(\d{2}\) \d{4,5}-\d{4}$"> <br>
+                <!-- PATTERN="" é uma forma de formata como sere obrigado a ser digitado -->
+                
+                <input type="submit" value="Enviar...">
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>

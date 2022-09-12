@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica com Fonts</title>
+    <style>
+        @font-face {
+            font-family: Dragon;
+            src: url(fonts.index_03/eg_dragon_caps/Dragon.otf.otf) format('opentype'), url(fonts.index_03/tutulo_personal/) format('truetype');
+        }
+        @font-face {
+            font-family: Titulo;
+            src: url(fonts.index_03/tutulo_personal/Titulo.ttf.ttf) format('truetype');
+        }
+
+        body {
+            margin: 0;
+            background-color: #F0F2F5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            background-color: #00ffff;
+            display: flex;
+            height: 50px;
+            margin: 0;
+            border-radius: 10px;
+        }
+        header div {
+            border-radius: 30px;
+            width: 200px;
+            margin-right: 50px;
+            margin-top: 5px;
+            text-align: center;
+            height: 40px;
+        }
+        header h2 {
+            margin: 0;
+        }
+        footer {
+            font: italic normal 1em Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            width: 500px;
+            margin: auto;
+            padding: 4px;
+        }
+        footer p {
+            display: none;
+        }
+        footer:hover p {
+            display: block;
+            text-align: justify;
+        }
+        #conteiner {
+            text-align: center;
+            width: 70%;
+            margin: 10px auto;
+            background-color: white;
+            padding: 4px;
+            border-radius: 8px;
+            box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.186);
+        }
+        #conteiner_2 {
+            margin: 10px auto;
+            background-color: white;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.167);
+            padding: 4px;
+        }
+        #conteiner_2 p {
+            text-indent: 20px;
+            text-align: justify;
+        }
+        h1 {
+            font-family: Titulo, serif;
+        }
+
+        #h2_nome {
+            font: 1.3em Dragon, Titulo, serif;
+        }
+        .div-1:hover {
+            background-color: #000000;
+        }
+        .div-1:hover a {
+            color: white;
+        }
+        #traces_1-2-3 {
+            margin: 5px;
+            margin-left: auto;
+            width: 50px;
+        }
+        .traces {
+            background-color: #000000;
+            width: 40px;
+            height: 5px;
+            margin-left: auto;
+        }
+        #traces_1-2-3:hover div{
+            background-color: rgb(249, 76, 76);
+        }
+        #conteudo {
+            display: flex;
+        }
+        #menu {
+            background-color: red;
+            margin-left: auto;
+            z-index: 5;
+            width: 500px;
+            height: 450px;
+            display: none;
+        }
+        .input-1:checked ~ #menu_0 {
+            display: block;
+        }
+</style>
+</head>
+<body>    <!--x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=HTML=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x-->
+    <header>
+        <div class="div-1">
+            <a href="Tegnologia_1/011.html"><h2>Logo</h2></a>
+        </div>        
+            
+        <div class="div-1">       <!--div,s que vai mudar de cor-->
+            <a href="Tegnologia_1/011.html"><h2>Menu</h2></a>
+        </div>        
+            
+        <div class="div-1">
+            <a href="Tegnologia_1/011.html"><h2>Conquistas</h2></a>
+        </div>        
+            
+        
+        <input type="checkbox" name="input" id="input-1">
+        <label id="traces_1-2-3" for="input-1">
+            <div class="traces" id="trace-1"></div>
+            <div class="traces" id="trace-2"></div>
+            <div class="traces" id="trace-3"></div>
+        </label>
+    </header>
+
+    <div id="conteudo">
+        <div id="pagina">
+            <div id="conteiner">
+                <h1>Testando a pratica com fontes</h1>
+                <h2 id="h2_nome">RAMON</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore non, laudantium necessitatibus neque nesciunt et enim possimus voluptate repudiandae ea reiciendis ad quaerat quidem, iste, exercitationem ipsam sapiente quae rerum!</p>
+            </div>
+            <div id="conteiner_2">
+                <h2>Ola Mundo!!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat obcaecati praesentium fugit delectus tempora eos explicabo nobis totam dolorum ullam corporis aspernatur ipsa, error consequuntur iure asperiores. Pariatur, quasi!<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor quibusdam tenetur animi placeat aperiam optio aliquam ut, amet, praesentium ipsam laborum sed voluptatibus? Quaerat vero ducimus inventore facilis deleniti!</p>
+            </div>
+        </div>
+
+        <div id="menu_0">
+            <div id="menu">
+                    ola
+            </div>
+        </div>
+    </div>
+    <footer>
+        <strong>&copy;Ramon Rodrigues</strong>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, velit odit. Placeat incidunt aliquam ut deserunt quas voluptates nemo quod, illum saepe, voluptatibus sint nulla est et provident, voluptatem esse.</p>
+    </footer>
+</body>
+</html>

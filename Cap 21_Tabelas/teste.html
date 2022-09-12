@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Teste em Tabela</title>
+    <style>
+        table {
+            position: relative;
+            margin: auto;
+            width: 500px;
+            border: solid 4px black;
+            border-collapse: collapse;
+        }
+        table caption {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            font-size: 1.5em;
+        }
+
+        thead {
+            position: sticky;
+            top: -5px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(83, 76, 76);
+            color: white;
+        }
+
+        td, th {
+            text-align: center;
+            padding: 5px;
+            border: solid 1px black;
+        }
+
+        th#aluno {
+            width: 35%;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: auto;
+            padding: 20px;
+            max-width: 400px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela Media Escolar</caption>
+        <thead>
+            <tr>
+                <th scope="col">Num</th>
+                <th scope="col" id="aluno">Aluno</th>
+                <th scope="col">Nota-01</th>
+                <th scope="col">Nota-02</th>
+                <th scope="col">Media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>00</td>
+                <td>João</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Maria</td>
+                <td>18.5</td>
+                <td>15.0</td>
+                <td>17.0</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Paulo</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Ramon</td>
+                <td>16.5</td>
+                <td>20.0</td>
+                <td>18.0</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Ronaldin</td>
+                <td>16.5</td>
+                <td>11.0</td>
+                <td>13.0</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Tilipa</td>
+                <td>15.5</td>
+                <td>15.0</td>
+                <td>15.2</td>
+            </tr><tr>
+                <td>06</td>
+                <td>João</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>Maria</td>
+                <td>18.5</td>
+                <td>15.0</td>
+                <td>17.0</td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>Paulo</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td>Ramon</td>
+                <td>16.5</td>
+                <td>20.0</td>
+                <td>18.0</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Ronaldin</td>
+                <td>16.5</td>
+                <td>11.0</td>
+                <td>13.0</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Tilipa</td>
+                <td>15.5</td>
+                <td>15.0</td>
+                <td>15.2</td>
+            </tr><tr>
+                <td>12</td>
+                <td>João</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Maria</td>
+                <td>18.5</td>
+                <td>15.0</td>
+                <td>17.0</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Paulo</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Ramon</td>
+                <td>16.5</td>
+                <td>20.0</td>
+                <td>18.0</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Ronaldin</td>
+                <td>16.5</td>
+                <td>11.0</td>
+                <td>13.0</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Tilipa</td>
+                <td>15.5</td>
+                <td>15.0</td>
+                <td>15.2</td>
+            </tr><tr>
+                <td>18</td>
+                <td>João</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Maria</td>
+                <td>18.5</td>
+                <td>15.0</td>
+                <td>17.0</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Paulo</td>
+                <td>16.5</td>
+                <td>15.0</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Ramon</td>
+                <td>16.5</td>
+                <td>20.0</td>
+                <td>18.0</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Ronaldin</td>
+                <td>16.5</td>
+                <td>11.0</td>
+                <td>13.0</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Tilipa</td>
+                <td>15.5</td>
+                <td>15.0</td>
+                <td>15.2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total de Alunos</th>
+                <td colspan="3"><strong>23</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutPut</title>
+    <style>
+        body {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        legend {
+            font-size: 2em;
+        }
+
+        section {
+            margin: 40px;
+        }
+        form {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <section>    
+        <fieldset>
+            <legend>Oninput</legend>
+
+            <form action="#">
+                <label for="in1">Numero 1: </label>
+                <input type="number" name="n1" id="in1"
+                oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)" required>
+
+                <br> 
+                <!--Um input com um metodo oninput e um Script.js--> 
+                <br>
+
+                <label for="in2">Numero 2: </label>
+                <input type="number" name="n2" id="in2"
+                oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)"
+                required>
+
+                <br> 
+                <!--Outro input com um metodo oninput e um Script.js--> 
+                <br>
+
+                <label for="isoma">Total: </label>
+                <output name="soma" id="isoma">0</output>
+
+                <br> 
+                <!-- Uma teg ontput ligado com os input,s acima --> 
+                <br>
+
+                <input type="submit" value="Enviar">
+        </fieldset>
+        </form>
+    </section>
+
+
+
+    <section>
+        <form action="#">
+            <fieldset>
+                <legend>Range / Oninput</legend>
+
+                <label for="irange-1">Nivel 1: </label>
+                <input type="range" name="range1" id="irange1"
+                oninput="iout.innerHTML = Number(range1.value)" value="0" min="0" max="10" required>
+                
+                <label for="iout">Nivel: </label>
+                <output name="out" id="iout">0</output>
+
+                <br><br>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </section>
+
+
+
+    <section>
+        <fieldset>
+            <legend>Script / Output / Function</legend>
+
+            <form action="#">
+
+                <label for="iano">Data de Nacimento: </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022" 
+                oninput="calculo()"> 
+                
+                <br> <br>
+
+                <label for="ires">Idade: </label>
+                <output name="res" id="ires">0</output>
+
+                <br> <br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </section>
+
+
+
+    <script>
+        function calculo() {
+            let atual = new Date().getFullYear()
+
+            ires.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+* {
+    margin: 3px;
+    padding: 3px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+body header menu {
+    display: none;
+}
+
+
+main article {
+    width: 100vw;
+}
+
+article::after {
+    content: "Esse Artigo foi empresso atraves do site www.ramonquemmanda.com";
+    color: rgb(0, 0, 250);
+}

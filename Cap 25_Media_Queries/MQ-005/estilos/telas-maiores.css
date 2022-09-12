@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) {
+    header menu {
+        background-color: transparent;
+        display: block;
+        text-align: left;
+    }
+    header div#hamburguer {
+        display: none;
+    }
+    header h1 {
+        display: inline-block;
+    }
+    header li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    header a {
+        border-radius: 5px;
+    }
+
+
+    main {
+        width: 800px;
+    }
+}

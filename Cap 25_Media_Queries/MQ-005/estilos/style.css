@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="checkbox"] {display: none;}
+body {
+    background-color: rgb(190, 186, 186);
+}
+
+
+
+            /* ESTILO PARA O HEADER */
+header {
+    background-color: rgb(97, 96, 96);
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+}
+header div#hamburguer .tracos{
+    background-color: black;
+    margin: 4px;
+    width: 45px;
+    height: 4px;
+}
+
+header menu {
+    background-color: rgb(56, 55, 55);
+    display: none;
+    padding: 5px 0px;
+}
+input[type="checkbox"]:checked ~ header menu {/* Acionando o menu */
+    display: block;
+}
+
+header ul {
+    list-style-type: none;
+}
+header li {
+    margin: 5px;
+}
+header a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    border: solid 1px transparent;
+}
+header a:hover {
+    background-color: rgb(48, 47, 47);
+    border: solid 1px black;
+}
+
+
+
+            /* ESTILO PARA O MAIN */
+main {
+    background-color: white;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90vw;
+}
+main h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+main p {
+    margin-bottom: 5px;
+    text-align: justify;
+    text-indent: 13px;
+}

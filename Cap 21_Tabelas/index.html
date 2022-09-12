@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de tabela</title>
+    <style>
+        table {
+            width: 350px;
+            height: 200px;
+            border-collapse: collapse;  /* para deixa apenas uma linha na borda da tabela */
+        }
+        td {
+            font-weight: bold;
+            border: solid 1px black;
+            text-align: center;
+            vertical-align: top;    /*alinha uma tabela verticalmente */
+        }
+        
+        tr#tr02 {
+            background-color: blue;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr id="tr02">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td class="numero">D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td class="numero">D3</td>
+        </tr>
+    </table>
+</body>
+</html>

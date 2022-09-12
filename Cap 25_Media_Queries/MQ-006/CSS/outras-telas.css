@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*
+pequenas < 600px
+Celular  600px até 768px
+Tablet   768px até 992px
+Pc,s     992 até 1200px
+Grandes > 1200px
+*/
+
+@media screen and (min-width: 730px) and (max-width: 990px) {
+    body {
+        background-image: linear-gradient(to bottom, #a052e8, rgb(161, 244, 244));
+        position: relative;
+        height: 100vh;
+    }
+
+    main {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        width: 90vw;
+        max-width: 750px;
+        transition: .4s;
+    }
+    
+    #imagem img {
+        border-radius: 0px 30% 0px 0px;
+        width: 260px;
+        height: 100%;
+    }
+    
+    section#formulario {
+        width: 100%;
+    }
+
+    div.div-inputs {
+        width: 85%;
+    }
+
+    span.material-symbols-outlined {
+        left: 5%;
+    }
+}
+
+
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    body {
+        background-image: linear-gradient(to bottom, #a052e8, rgb(161, 244, 244));
+        position: relative;
+        height: 100vh;
+    }
+
+    main {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90vw;
+        max-width: 1000px;
+        transition: .4s;
+    }
+    
+    #imagem img {
+        border-radius: 30% 0px 0px 0px;
+        width: 370px;
+        height: 100%;
+    }
+    
+    section#formulario {
+        width: 100%;
+    }
+
+    div.div-inputs {
+        width: 85%;
+    }
+
+    span.material-symbols-outlined {
+        left: 5%;
+    }
+}

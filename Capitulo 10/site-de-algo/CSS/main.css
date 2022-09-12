@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    margin: 15px 0px 10px 0px;
+}
+
+#inicio-main {
+    background-color: rgb(236, 233, 233);
+    text-align: left;
+    padding: 25px 30px;
+}
+
+
+
+/* ESTA CONFIGURAÇÃO ESTA TANTO PARA A PRIMEIRA SECTION DE QUARTOS QUANTO PARA A SEGUNDA SECTION */
+span {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+}
+span #texto {
+    font-size: .8em;
+    text-align: left;
+    padding: 7px;
+}
+span #icone {
+    background-color: blue;
+    width: 70px;
+    height: 106%;
+    margin-top: -4px;
+}
+/* ESTA CONFIGURAÇÃO ACIMA ESTA TANTO PARA A PRIMEIRA SECTION DE QUARTOS QUANTO PARA A SEGUNDA SECTION  */
+/* FIM DA PRIMEIRA FILEIRA */
+
+
+
+
+/*================= CONFIGURAÇÃO DA PRIMEITA FILEIRA DE IMAGEM =================*/
+#quartos-principais {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 0px auto 30px auto;
+    width: 97vw;
+    max-width: 1200px;
+}
+
+#quartos-principais div.container-imagens {
+    background-color: rgb(236, 233, 233);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.218);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 470px;
+}
+
+#quartos-principais div img {
+    width: 100%;
+    height: 280px;
+}
+
+
+
+/* =========== ESTA CONFIGURAÇÃO É DA SEGUNDA FILEIRA DE IMAGENS ================ */
+#quartos-secundario {
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+}
+
+#quartos-secundario div.container-imagens {
+    background-color: rgb(236, 233, 233);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.218);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#quartos-secundario img {
+    width: 330px;
+    height: 200px;
+}
+
+
+
+/* =============== CONFIGURAÇÃO DAS IMAGENS DAS INFLUENCIAS =============== */
+#influencias {
+    background-color: rgb(224, 231, 231);
+    margin: 40px auto;
+    padding: 10px 0px;
+    width: 98vw;
+}
+
+#influencias p#paragrafo {
+    font-size: 1.2em;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+#pessoas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#pessoas div {
+    padding: 20px;
+}
+#pessoas div img {
+    display: block;
+    padding: 5px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    #quartos-principais {
+        flex-wrap: wrap;
+    }
+    #quartos-principais div.container-imagens {
+        margin: 10px;
+        width: 600px;
+    }
+
+
+    #quartos-secundario {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 97vw;
+        margin: auto;
+    }
+    #quartos-secundario div.container-imagens {
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    #quartos-principais {
+        flex-wrap: wrap;
+    }
+    #quartos-principais div.container-imagens {
+        margin: 10px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* typical Device Breakpoints
+======================================
+pequenas < 600px
+Celular  600px até 768px
+Tablet   768px até 992px
+Pc,s     992 até 1200px
+Grandes > 1200px
+*/
+
+
+
+/* ESTILO PARA TABLET */
+@media screen and (min-width: 600px) {
+    html {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: inline-block;}
+}
+
+
+
+/* ESTILO PARA PC */
+@media screen and (min-width: 850px) {
+    html {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#tablet {display: none;}
+    img#pc {display: inline-block;}
+}
+
+
+
+/* ESTILO PARA TV */
+@media screen and  (min-width: 1100px) {
+    html {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#pc {display: none;}
+    img#tv {display: inline-block;}
+}
+
+
+
+/* ESTILO PARA IMPRESSORA */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    main {
+        box-shadow: none;
+        border: solid 2px black;
+    }
+
+    footer::after {
+        content: "Essa impressão foi feita  atraveis do site ramon-rodrigues-001.github.io//";
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#impressora {display: inline-block;}
+}

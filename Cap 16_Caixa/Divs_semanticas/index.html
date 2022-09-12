@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de divs semanticas</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: aqua;
+            display: flex;
+            padding: 5px;
+            height: 50px;
+        }
+        header > h1 {
+            margin: 0;
+            display: inline-block;
+            width: 50%;
+        }
+        #header_nav {
+            display: flex;
+            width: 50%;
+        }
+        header > nav > button {
+            margin: 5px auto;
+            border-radius: 8px;
+            height: 40px;
+            width: 25%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        button:hover a {
+            text-decoration: underline;
+        }
+        button:hover {
+            background-color: rgb(192, 194, 196);
+        }
+
+        main {
+            background-color: rgb(205, 201, 196);
+            font: bold 1em Arial, sans-serif;
+            margin: 15px auto;
+            padding: 8px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.124);
+            width: 50%;
+            height: 500px;
+        }
+        main #introducao {
+            box-shadow: inset 0px 0px 16px 4px black;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            height: 30px;
+        }
+        aside {
+            font: italic  normal 1.3em serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ola, Mundo!!</h1>
+        <nav id="header_nav">
+            <button><a href="#"><strong>Menu</strong></a></button> <br>
+            <button><a href="#"><strong>Menu</strong></a></button> <br>
+            <button><a href="#"><strong>Menu</strong></a></button>
+        </nav>
+    </header>
+    <main>
+        <section id="introducao">
+            <h1>Noticia sobre politica Brasileira</h1>
+        </section>
+        <section z>
+            <article id="Artigo_01">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ducimus? Similique perferendis facilis magnam rerum iusto sed quod sunt velit ab, voluptatem impedit nisi libero unde dicta beatae neque vel!</p>
+                <aside><strong>Altor: Luviana Pomala</strong></aside>
+            </article>
+            <article id="Artigo_02">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore adipisci ad ab voluptatibus atque consequatur cumque, omnis suscipit velit. Voluptatum at iste doloremque beatae atque quos eum, dolorum cumque.</p>
+                <aside><strong>Altor: Junior programing</strong></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <strong>&copy;Ramon Rodrigues</strong>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <style>
+        main {
+            font-size: 1.1em;
+            width: 550px;
+            margin: 20px auto;
+        }
+
+        fieldset {
+            margin: 10px;
+        }
+
+        legend {
+            font-size: 1.5em;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: auto;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Select</legend>
+
+                <label for="iselect">Estado: </label>
+                <select name="select" id="iselect">
+                    <optgroup label="Populares">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="Mais">
+                        <option value="PA">Pará</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                </select>
+
+                <p>O select permite selecionar algo porém não permite que o cliente digite</p>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Datalist</legend>
+
+                <label for="idatalist">Estado: </label>
+                <input type="text" name="datalist" id="idatalist" list="lista" placeholder="Estado">
+
+                <datalist id="lista">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="PA">Pará</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                </datalist>
+
+                <p>Obs: lembre de digitar a teg com os <> para funcionar. <br>
+                O datalist deve ser lincado com um [input com a teg list dentro] e o id</p>
+                <p><strong>A grande jogada aqui é que o cliente pode digitar</strong></p>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Textarea</legend>
+
+                <label for="imens">Mensagem: </label> <br>
+                <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>

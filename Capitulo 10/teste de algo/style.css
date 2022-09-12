@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@keyframes circulo {
+    0% {
+        border: solid 3px transparent;
+        border-bottom: solid 3px red;
+    }
+    30% {
+        border: solid 3px transparent;
+        border-left: solid 3px red;
+    }
+    60% {
+        border: solid 3px transparent;
+        border-top: solid 3px red;
+    }
+    90% {
+        border: solid 3px transparent;
+        border-right: solid 3px red;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif   ;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.154);
+    height: 50px;
+    width: 100vw;
+    z-index: 999;
+}
+header h1 {
+    text-align: center;
+    margin-top: 7px;
+    width: 30%;
+}
+header menu {
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 70%;
+}
+header menu a {
+    color: white;
+    font: bold 1em Arial;
+    text-decoration: none;
+    padding: 2px 8px;
+    margin-right: 15px;
+}
+a#home {color: red;}
+
+header menu a:hover {
+    text-decoration: underline;
+}
+
+
+section#part-01 {
+    position: relative;
+    background: rgb(29, 29, 29) url(img/back-pc.jpg) center center no-repeat;
+    background-size: cover;
+    border-bottom: solid 10px rgb(255, 0, 0);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.316);
+    height: 100vh;
+    z-index: 3;
+}
+div#circulo {
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: solid 3px transparent;
+    height: 200px;
+    width: 300px;
+    z-index: 555;
+    animation: circulo .2s infinite;
+}
+
+section#part-01 button {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: bold 1.5em Arial;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+}
+span#detalhe_01 {
+    position: absolute;
+    top: -4px;
+    left: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30px;
+    height: 8px;
+    transition: 0.5s;
+}
+span#detalhe_02 {
+    position: absolute;
+    bottom: -6px;
+    right: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30px;
+    height: 8px;
+    transition: 0.5s;
+}
+section#part-01 button:hover {
+    background-color: black;
+    color: red;
+    border: solid 2px red;
+    letter-spacing: 0.3em;
+    box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.129);
+    transition: 0.5s;
+}
+section#part-01 button:hover #detalhe_01 {
+    background-color: red;
+    left: 78%;
+    transition: 0.5s;
+}
+section#part-01 button:hover #detalhe_02 {
+    background-color: red;
+    right: 78%;
+    transition: 0.5s;
+}
+
+
+section#part-02 {
+    background-color: blanchedalmond;
+    height: 100vh;
+}

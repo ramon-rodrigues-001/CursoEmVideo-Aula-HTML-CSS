@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 4px;
+    padding: 0;
+}
+
+
+main {
+    background-color: black;
+    margin: auto;
+    width: 1000PX;
+}
+main section {
+    display: inline-block;
+    margin: 2px;
+    border: solid 2px black;
+    border-radius: 15px;
+    min-height: 200px;
+    width: 32%;
+}
+
+#sec-01 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: left top;
+}
+#sec-02 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: center top;
+}
+#sec-03 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: right top;
+}
+#sec-04 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position:  left center;
+}
+#sec-05 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: center center;
+}
+#sec-06 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: right center;
+}
+#sec-07 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: left bottom;
+}
+#sec-08 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: center bottom;
+}
+#sec-09 {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: right bottom;
+}
+
+#imagen-completa {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 10px;
+    min-height: 700px;
+    width: 1200px;
+}
+
+/*
+para melhor prenchimento da imagen na tela tente adicionar alguns elementos em
+"background-size" como [100% 100%]
+[contain] = Exibir a imagem total isso pode criar barras laterais dependendo do tamanho da tela
+[cover] = Ocupa 100% da tela mais a imagem pode ser cortada
+*/

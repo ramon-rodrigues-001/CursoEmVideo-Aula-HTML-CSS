@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela</title>
+</head>
+<body>
+    <table>
+        <caption>Tabela Filmes</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="dados">
+                <th  rowspan="3" scope="rowgroup">Mulher</th>
+                <td>Ana Maria</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+            <tr class="dados">
+                <td>Paula gonsalves</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+            <tr class="dados">
+                <td>Paloma Col</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+
+            <tr class="dados">
+                <th rowspan="3" scope="rowgroup">Homem</th>
+                <td>João Cagão</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+            <tr class="dados">
+                <td>Renan Da Penha</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+            <tr class="dados">
+                <td>Carlos Noia</td>
+                <td>Filme-01</td>
+                <td>Filme-02</td>
+                <td>Filme-03</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total pessoas</th>
+                <td style="text-align: center;"><strong>???</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

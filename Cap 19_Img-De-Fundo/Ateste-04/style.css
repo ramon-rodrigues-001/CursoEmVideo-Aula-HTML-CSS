@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main section {
+    background-image: url(../imagens-cap19/wallpaper003.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+main section p {
+    background-color: #000000;
+    color: white;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: rgb(220, 212, 212);
+    margin-bottom: 8px;
+    height: 50px;
+}
+header div#imagem {
+    background-color: rgb(91, 91, 134);
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+header div#imagem p {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+header h1 {
+    text-align: center;
+}
+header div#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header div.tracos {
+     background-color: black;
+     width: 45px;
+     height: 3px;
+     margin: 5px;
+}
+
+
+main {
+    display: flex;
+}
+
+main section {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section#sec-01 {
+    background-color: aqua;
+    padding: 10px 2%;
+    width: 25%;
+    height: 100vh;
+}
+
+
+section#sec-02 {
+    margin: auto;
+    background-color: blue;
+    padding: 10px 2%;
+    width: 400px;
+    height: 100vh;
+}
+
+
+section#sec-03 {
+    background-color: rgb(255, 0, 0);
+    padding: 10px 2%;
+    width: 25%;
+    height: 100vh;
+}
+
+
+@media (max-width: 1100px) {
+    section#sec-01 {
+        display: none;
+    }
+    section#sec-02 {
+        width: 50%;
+    }
+    section#sec-03 {
+        width: 35%;
+    }
+}
+
+@media (max-width: 700px) {
+    section#sec-02 {
+        width: 500px;
+    }
+    section#sec-03 {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    section#sec-02 {
+        width: 95%;
+    }
+}
